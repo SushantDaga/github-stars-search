@@ -1,0 +1,36 @@
+# GitHub Stars Search Configuration
+
+# GitHub API settings
+github:
+  per_page: 100  # Number of repositories per API request
+  max_retries: 3  # Maximum number of retries for API requests
+  timeout: 30     # Timeout for API requests in seconds
+
+# Content processing settings
+content:
+  max_readme_size: 500000  # Maximum README size in bytes to process
+  prefer_english: true     # Prefer English README files
+  chunk_strategy: "hybrid"  # Chunking strategy: "semantic", "sliding", or "hybrid"
+  max_chunk_size: 512      # Maximum chunk size in tokens
+  chunk_overlap: 50        # Overlap between chunks in tokens
+
+# Embedding settings
+embeddings:
+  model: "BAAI/bge-small-en-v1.5"  # Default embedding model
+  device: "cpu"                    # Device to use for embeddings: "cpu" or "cuda"
+  batch_size: 32                   # Batch size for embedding generation
+  cache_enabled: true              # Enable embedding cache
+
+# Search settings
+search:
+  hybrid_enabled: true             # Enable hybrid search
+  neural_weight: 0.7               # Weight for neural search results
+  keyword_weight: 0.3              # Weight for keyword search results
+  max_results: 20                  # Maximum number of results to return
+  min_score: 0.2                   # Minimum score for results
+
+# Storage settings
+storage:
+  compress_data: true              # Compress stored data
+  backup_enabled: true             # Enable backups before updates
+  max_backups: 3                   # Maximum number of backups to keep

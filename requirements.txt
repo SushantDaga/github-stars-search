@@ -1,0 +1,36 @@
+# GitHub API
+requests>=2.28.0
+PyGithub>=1.55.0
+
+# Text processing and language detection
+langdetect>=1.0.9
+markdown>=3.4.0
+beautifulsoup4>=4.11.0
+html2text>=2020.1.16
+
+# Embedding and search
+txtai>=5.0.0
+sentence-transformers>=2.2.0
+torch>=1.12.0
+numpy>=1.22.0
+scikit-learn>=1.0.0
+rank-bm25>=0.2.2
+
+# CLI and configuration
+click>=8.1.0
+pyyaml>=6.0
+tqdm>=4.64.0
+colorama>=0.4.5
+rich>=12.0.0
+python-dotenv>=0.20.0
+
+# Storage
+joblib>=1.1.0
+
+# Web interface
+flask>=2.0.0
+
+# Testing
+pytest>=7.0.0
+pytest-cov>=4.0.0
+pytest-mock>=3.10.0

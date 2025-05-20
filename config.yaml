@@ -27,7 +27,7 @@ search:
   neural_weight: 0.7               # Weight for neural search results
   keyword_weight: 0.3              # Weight for keyword search results
   max_results: 20                  # Maximum number of results to return
-  min_score: 0.2                   # Minimum score for results
+  min_score: 0.0                   # Minimum score for results
 
 # Storage settings
 storage:
